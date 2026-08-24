@@ -1,0 +1,50 @@
+.film-details {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+
+.film-details h1 {
+  font-size: 48px;
+}
+
+.film-details__back {
+  display: inline-block;
+  margin-bottom: 32px;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.film-details__back:hover {
+  text-decoration: underline;
+}
+
+.film-details__episode {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--text);
+}
+
+.film-details h1 {
+  margin: 0 0 32px;
+}
+
+.film-details__meta {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 40px;
+}
+
+.film-details__crawl {
+  margin-top: 48px;
+  max-width: 800px;
+}
+
+.film-details__crawl h2 {
+  margin-bottom: 16px;
+}
+
+.film-details__crawl p {
+  line-height: 1.7;
+}

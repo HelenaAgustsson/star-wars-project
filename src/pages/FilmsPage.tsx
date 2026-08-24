@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import getFilms from '../api/getFilms'
 import type { Film } from '../types/film'
-import ListFilms from '../components/ListFilms'
+import ListFilms from '../components/ListFilms/ListFilms'
 
 function FilmsPage() {
     const [films, setFilms] = useState<Film[]>([])

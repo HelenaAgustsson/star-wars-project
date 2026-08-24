@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
-import type { Film } from '../types/film'
+import type { Film } from '../../types/film'
 import './FilmCard.css'
-import { formatDate } from '../utils/formatDate'
+import { formatDate } from '../../utils/formatDate'
 
 type FilmCardProps = {
     film: Film
