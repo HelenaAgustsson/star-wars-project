@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom'
 import type { Film } from '../types/film'
 import { useEffect, useState } from 'react'
 import getFilm from '../api/getFilm'
+import FilmDetails from '../components/FilmDetails/FilmDetails'
 
 function FilmPage() {
     const [film, setFilm] = useState<Film | null>(null)
@@ -50,14 +51,7 @@ function FilmPage() {
     }
 
     return (
-        <div>
-            <h1>{film.title}</h1>
-            <p>Episode: {film.episode_id}</p>
-            <p>Director: {film.director}</p>
-            <p>Producer: {film.producer}</p>
-            <p>Release Date: {film.release_date}</p>
-            <p>{film.opening_crawl}</p>
-        </div>
+        <FilmDetails film={film} />
     )
 }
 

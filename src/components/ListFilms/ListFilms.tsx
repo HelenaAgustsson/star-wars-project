@@ -1,5 +1,5 @@
-import type { Film } from '../types/film'
-import FilmCard from './FilmCard'
+import type { Film } from '../../types/film'
+import FilmCard from '../FilmCard/FilmCard'
 import './ListFilms.css'
 
 type ListFilmsProps = {
