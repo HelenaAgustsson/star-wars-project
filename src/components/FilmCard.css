@@ -1,0 +1,39 @@
+.films-page {
+  width: min(1100px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+.film-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.film-card {
+  display: block;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 0.75rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.film-card:hover {
+  transform: translateY(-2px);
+}
+
+.film-card:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 4px;
+}
+
+.film-card__episode {
+  font-size: 0.875rem;
+}
+
+.film-card__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
